@@ -1,0 +1,187 @@
+.menu-box {
+  //max-width: 100rem;
+  width: 100%;
+  margin: 12rem auto 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    width: 100%;
+    padding: 3rem;
+
+    position: absolute;
+    transition: all 0.3s;
+    opacity: 0;
+    display: none;
+  }
+
+  &__content-active {
+    opacity: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content-left {
+    flex: 50%;
+  }
+
+  &__content-right {
+    flex: 50%;
+    position: relative;
+  }
+
+  &__figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 30rem; // 25
+    height: 30rem;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &__caption {
+    position: absolute;
+    right: 2rem;
+    top: -5rem;
+    background-color: $color-grey-light-1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgba($color-black, 0.1);
+  }
+
+  &__heading {
+    font-size: $default-font-size;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__sub {
+    font-size: 1.5rem;
+    list-style: none;
+  }
+
+  // Botones
+  &__tab-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+
+  &__tab {
+    width: 20rem; // 20
+    height: 10.9rem; // 10.9
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    margin-right: 3rem;
+    background-color: inherit;
+
+    overflow: hidden;
+    transition: all 0.3s;
+    transform: scale(0.95);
+  }
+
+  &__tab-active {
+    box-shadow: 1rem 1rem 3rem rgba($color-black, 0.2);
+    transform: scale(1);
+  }
+
+  &__image-tab {
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__text {
+    flex: 50%;
+    font-size: $default-font-size;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
+
+  @include respond(breakp-750) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &__tab-container {
+      display: none;
+      visibility: hidden;
+    }
+
+    &__content {
+      width: 30rem;
+      margin: 1rem;
+      padding: 0;
+
+      transition: all 0.7s ease-in;
+      position: relative;
+
+      overflow: hidden;
+
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 30rem;
+      align-self: normal;
+      flex-direction: column-reverse;
+    }
+
+    &__content-active {
+      opacity: 0;
+    }
+
+    &__figure {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
+
+    &__image {
+      width: 100%;
+      height: 30rem;
+      margin: 0 auto;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 2rem 2rem 0 0;
+      clip-path: none;
+    }
+
+    &__caption {
+      display: none;
+    }
+
+    &__content-left {
+      background-color: $color-grey-light-1;
+      border-radius: 2rem;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      top: -6rem;
+      z-index: 2;
+    }
+  }
+}

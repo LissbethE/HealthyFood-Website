@@ -1,0 +1,107 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInMain {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.moveup {
+  transition: transform 1s, opacity 1s;
+}
+
+.moveup--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy-img--hidden {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease-in;
+}
+
+// Animation for phone
+@include respond(breakp-750) {
+  .animation-scroll {
+    transition: all 0.7s ease-in;
+    transform: translateX(-50%);
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .animation-scroll:nth-of-type(even) {
+    transform: translateX(50%);
+  }
+
+  .animation-scroll.show {
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+}

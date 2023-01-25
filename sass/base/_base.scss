@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+html {
+  font-size: 62.5%; // 10px
+
+  // -----------------------------------------------------------------
+
+  // width <= 900
+  @include respond(tab-portrait) {
+    font-size: 56.25%; // 9px
+  }
+
+  // width <= 768
+  @include respond(breakp-768) {
+    font-size: 53.75%; // 8.6px
+  }
+
+  // width <= 400
+  @include respond(smallPhone) {
+    font-size: 43.75%; // 7px
+  }
+
+  // width >= 1800px
+  @include respond(big-desktop) {
+    font-size: 100%; // 16px
+  }
+
+  /* Scroll Smoothly */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  background-color: $color-grey-light-3;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-grey-light-1;
+}

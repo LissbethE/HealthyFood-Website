@@ -1,0 +1,16 @@
+.row {
+  max-width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .col--order-1,
+  .col--order-2 {
+    flex: 50%;
+  }
+}
+

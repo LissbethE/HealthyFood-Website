@@ -1,0 +1,35 @@
+// COLOR
+$color-primary-light: #00f260;
+$color-primary-dark: #0f9b0f;
+
+$color-black: #000;
+$color-white: #fff;
+$color-white-rgba: rgba(255, 255, 255, 0.2);
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #f0f3f7;
+$color-grey-light-3-rgba: rgba(238, 242, 246, 0.1);
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #555;
+$color-grey-dark-3: #999;
+$color-grey-dark-4: #333;
+$color-grey-dark-5: #7a7a7b;
+$color-grey-dark-6: #9da2ad;
+
+// S H  A D O W
+$boxShadow-1: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+
+// T E X T  S T Y L E
+$default-font-size: 1.6rem;
+$font-size-big: 7rem;
+$letterSpacing-small: 0.2rem;
+$font-family-2: 'Bad Script', 'Poppins', sans-serif;
+
+$clamp-small: clamp(1rem, calc(2vw + 1rem), 1.3rem);
+$clamp-medium: clamp(1.2rem, calc(2vw + 1rem), 1.6rem);
+$clamp-medium-big: clamp(1.8rem, calc(3vw + 1rem), 6rem);
+$clamp-big: clamp(1.8rem, calc(6vw + 1rem), 6rem);
+
+$hidden: hidden;

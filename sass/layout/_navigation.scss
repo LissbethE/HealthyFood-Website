@@ -1,0 +1,261 @@
+.navigation {
+  // navigation button and background
+  &__button,
+  &__icon,
+  &__background {
+    display: none;
+  }
+
+  &__nav {
+    width: 100%;
+    position: absolute;
+    z-index: 1500;
+    padding: 1rem 5rem; // 1rem 1rem 1rem 5rem
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Contenedor de los enlaces
+  &__nav.activeNav {
+    position: fixed;
+    transition: all 0.5s;
+    background-color: $color-grey-light-3;
+  }
+
+  &__logo {
+    font-size: 1.8rem;
+    letter-spacing: $letterSpacing-small;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+    color: $color-black;
+    transition: all 0.3s;
+
+    & span {
+      font-size: 3rem;
+      margin-right: 0.2rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: $default-font-size;
+      letter-spacing: $letterSpacing-small;
+      font-weight: 600;
+      padding: 0.8rem 1.5rem;
+
+      color: $color-black;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-primary-dark 50%
+      );
+      background-size: 250%;
+      transition: all 0.4s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-grey-light-3;
+      transform: translateX(1rem);
+    }
+  }
+
+  //? MediaQuery --------------------------------------------------------------
+
+  // width <= 1015px
+  @include respond(breakp-1015) {
+    // navigation button and background
+    &__background {
+      display: block;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      position: fixed;
+      top: 2.5rem;
+      right: 2.5rem;
+      z-index: 1000;
+      cursor: pointer;
+      background-image: radial-gradient(
+        $color-primary-light,
+        $color-primary-dark
+      );
+
+      transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+
+      @include respond(phone) {
+        width: 4rem;
+        height: 4rem;
+        top: 1.5rem;
+        right: 1.5rem;
+      }
+    }
+
+    &__button {
+      display: block;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      z-index: 2000;
+      cursor: pointer;
+      background-color: $color-grey-light-1;
+      border: none;
+      @include shadow(1rem, 3rem, 0.1);
+
+      text-align: center;
+
+      @include respond(phone) {
+        width: 5rem;
+        height: 5rem;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+
+    // ICON
+    &__icon {
+      position: relative;
+      margin-top: 1.5rem;
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 0.2rem;
+        background-color: $color-black;
+        display: inline-block;
+        transition: all 0.2s;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    &__button:hover &__icon::before {
+      top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+      top: 1rem;
+    }
+
+    // Contenedor de los enlaces
+    &__nav {
+      height: 110vh;
+      position: fixed;
+      top: 0;
+      left: 0; //   left: 0;
+      z-index: 1500;
+
+      width: 0;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+      // background: none;
+    }
+
+    &__nav.activeNav {
+      background-color: transparent !important;
+    }
+
+    &__list {
+      width: 100%;
+      text-align: center;
+      @include centerAbs;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__item {
+      display: block;
+    }
+
+    &__link {
+      &:link,
+      &:visited {
+        font-size: 3rem; // arreglar
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        font-weight: 400;
+
+        color: $color-white;
+        background-image: linear-gradient(
+          120deg,
+          transparent 0%,
+          transparent 50%,
+          $color-white 50%
+        );
+
+        margin-bottom: 1.5rem;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-primary-dark;
+      }
+    }
+
+    //* F U N C T I O N A L I T Y
+
+    &__background.activeNavi {
+      transform: scale(80);
+    }
+
+    &__background.activeNavi ~ &__nav {
+      width: 100%;
+      display: block;
+      opacity: 1;
+    }
+
+    // Formando la X en el boton
+    &__background.activeNavi ~ &__button &__icon {
+      background-color: transparent;
+    }
+    &__background.activeNavi ~ &__button &__icon::before {
+      transform: rotate(135deg);
+      top: 0;
+      opacity: 1;
+    }
+
+    &__background.activeNavi ~ &__button &__icon::after {
+      transform: rotate(-135deg);
+      top: 0;
+      opacity: 1;
+    }
+  }
+}

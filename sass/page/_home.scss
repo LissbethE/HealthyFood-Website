@@ -1,0 +1,82 @@
+.section-about {
+  padding: 15rem 5rem;
+}
+
+.section-menu {
+  padding: 0 5rem 15rem 5rem;
+}
+
+.section-book {
+  padding: 15rem 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-size: cover;
+
+  @include respond(tab-portrait) {
+    padding: 10rem 3rem;
+  }
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-grey-light-1, 0.8) 0%,
+      rgba($color-grey-light-1, 0.8) 55%,
+      transparent 55%
+    ),
+    url('../images/table-small.jpg');
+
+  @include respond(tab-landscape) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-grey-light-1, 0.8) 0%,
+        rgba($color-grey-light-1, 0.8) 65%,
+        transparent 65%
+      ),
+      url('../images/table-small.jpg');
+  }
+
+  @include respond(tab-portrait) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-grey-light-1, 0.7) 0%,
+        rgba($color-grey-light-1, 0.7) 100%
+      ),
+      url('../images/table-small.jpg');
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 75em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-grey-light-1, 0.8) 0%,
+        rgba($color-grey-light-1, 0.8) 55%,
+        transparent 55%
+      ),
+      url('../images/table-original.jpg');
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  overflow: hidden;
+
+  &__form {
+    max-width: 90%;
+    padding: 6rem;
+
+    @include respond(tab-portrait) {
+      width: 100%;
+    }
+  }
+}
+
+.section-testimonial {
+  padding: 15rem 5rem;
+}

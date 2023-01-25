@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6cdd3768cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>🥗Freshness & Flavor</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <!-- btn and background -->
+      <div class="navigation__background">&nbsp;</div>
+
+      <button type="button" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </button>
+
+      <!-- enlaces -->
+      <nav class="navigation__nav">
+        <a href="#section--1" class="navigation__logo"><span>🥗</span>Logo</a>
+
+        <ul class="navigation__list">
+          <!-- 01 -->
+          <li class="navigation__item">
+            <a href="#section--1" class="navigation__link">Home</a>
+          </li>
+
+          <!-- 02 -->
+          <li class="navigation__item">
+            <a href="#section--2" class="navigation__link">About</a>
+          </li>
+
+          <!-- 03 -->
+          <li class="navigation__item">
+            <a href="#section--3" class="navigation__link">Menu</a>
+          </li>
+
+          <!-- 04 -->
+          <li class="navigation__item">
+            <a href="#section--4" class="navigation__link">Book a Table</a>
+          </li>
+
+          <!-- 05 -->
+          <li class="navigation__item">
+            <a href="#section--5" class="navigation__link">Testimonials</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header" id="section--1">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--sub-left">
+            100% Organic & Non-Toxic.
+          </span>
+          <span class="heading-primary--main">Freshness & Flavor</span>
+          <span class="heading-primary--sub-right">
+            Ingredients 100% of the nature.
+          </span>
+        </h1>
+        <p
+          class="paragraph u-margin-top-small-2 u-margin-bottom-medium paragraph--animated"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio
+          sit amet consectetur adipisicing elit amet consectetur adipisicing
+          elit. Sunt, optio sit amet consectetur elit.
+        </p>
+
+        <a href="#section--3" class="btn btn--animated">
+          <span class="btn__span">Explore Our Menu</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- A B O U T -->
+      <section class="section-about section moveup" id="section--2">
+        <div class="row row--wrap">
+          <!-- content of about -->
+          <div class="col-1-of-2 col--order-1">
+            <div class="content">
+              <div class="u-margin-bottom-small">
+                <span class="heading-secondary__sub">About Us</span>
+                <h2 class="heading-secondary">
+                  Fresh, Healthy, Organic, Delicious Food
+                </h2>
+              </div>
+
+              <p class="paragraph u-margin-bottom-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto deserunt ea voluptatum ut vel totam, facilis magni
+                consequatur fugiat odit ipsa eius, ratione animi aperiam beatae
+                ad illum reiciendis iste o deserunt ea voluptatum ut vel totam.
+              </p>
+              <p class="paragraph u-margin-bottom-medium">
+                facilis magni consequatur fugiat odit ipsa eius, ratione animi
+                aperiam beatae ad illum reiciendis iste o deserunt ea voluptatum
+                ut vel totam, facilis magni consequatur fugiat odit ipsa eius,
+                ratione animi aperiam beatae ad illum reiciendis iste
+              </p>
+
+              <!-- btn -->
+              <a href="#" class="btn u-margin-bottom-big">
+                <span class="btn__span">Learn more</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- image of about -->
+          <div class="col-1-of-2 col--order-2">
+            <div class="composition">
+              <figure class="composition__figure">
+                <img
+                  srcset="
+                    ./images/ab-food-small.jpg     300w,
+                    ./images/ab-food-original.jpg 1000w
+                  "
+                  sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                  alt="Vegetable rice salad"
+                  title="Vegetable rice salad"
+                  src="./images/ab-food-original.jpg"
+                  class="composition__photo"
+                />
+
+                <figcaption class="composition__caption">
+                  <h4 class="composition__heading">Vegetable rice salad</h4>
+                  <p class="composition__sub">🤤</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- M E N U -->
+      <section class="section-menu section moveup" id="section--3">
+        <div class="blockTex-secondary u-center-text">
+          <span class="heading-secondary__sub">Menu</span>
+          <h2 class="heading-secondary heading-secondary--size">
+            Our Special Dishes
+          </h2>
+        </div>
+
+        <!-- Dishes -->
+        <div class="menu-box">
+          <!-- 01 -->
+          <div
+            class="animation-scroll menu-box__content menu-box__content-active menu-box__content--1"
+          >
+            <!-- left side text -->
+            <div class="menu-box__content-left">
+              <div class="blockTex-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary__main heading-tertiary__main--size">
+                  Vegetable Salad
+                </h3>
+                <small
+                  class="heading-tertiary__small heading-tertiary__small--size"
+                >
+                  Lorem ipsum dolor sit.
+                </small>
+              </div>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas animi impedit maxime debitis hic magni earum, ratione
+                accusantium a quisquam.
+              </p>
+            </div>
+
+            <!-- right side image -->
+            <div class="menu-box__content-right">
+              <figure class="menu-box__figure">
+                <img
+                  srcset="
+                    ./images/dish-small--1.jpg     300w,
+                    ./images/dish-original--1.jpg 1000w
+                  "
+                  sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                  alt="Healthy Food"
+                  title="Vegetable Salad"
+                  src="./images/dish-original--1.jpg"
+                  class="menu-box__image"
+                />
+
+                <figcaption class="menu-box__caption">
+                  <h4 class="menu-box__heading">Ingredients:</h4>
+                  <ul class="menu-box__sub">
+                    <li>Ingre 1</li>
+                    <li>Ingre 2</li>
+                    <li>Ingre 3</li>
+                    <li>Ingre 4</li>
+                    <li>Ingre 5</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="animation-scroll menu-box__content menu-box__content--2">
+            <!-- left side text -->
+            <div class="menu-box__content-left">
+              <div class="blockTex-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary__main heading-tertiary__main--size">
+                  Aurora Food
+                </h3>
+                <small
+                  class="heading-tertiary__small heading-tertiary__small--size"
+                >
+                  Lorem ipsum dolor sit amet consectetur
+                </small>
+              </div>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas animi impedit maxime debitis hic magni earum, ratione
+                accusantium a quisquam! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit.
+              </p>
+            </div>
+            <!-- right side image -->
+            <div class="menu-box__content-right">
+              <figure class="menu-box__figure">
+                <img
+                  srcset="
+                    ./images/dish-small--2.jpg     300w,
+                    ./images/dish-original--2.jpg 1000w
+                  "
+                  sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                  alt="Healthy Food"
+                  title="Aurora Food"
+                  src="./images/dish-original--2.jpg"
+                  class="menu-box__image"
+                />
+
+                <figcaption class="menu-box__caption">
+                  <h4 class="menu-box__heading">Ingredients:</h4>
+                  <ul class="menu-box__sub">
+                    <li>Ingre 1</li>
+                    <li>Ingre 2</li>
+                    <li>Ingre 3</li>
+                    <li>Ingre 4</li>
+                    <li>Ingre 5</li>
+                    <li>Ingre 6</li>
+                    <li>Ingre 7</li>
+                    <li>Ingre 8</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="animation-scroll menu-box__content menu-box__content--3">
+            <!-- left side text -->
+            <div class="menu-box__content-left">
+              <div class="blockTex-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary__main heading-tertiary__main--size">
+                  Tomato Soup
+                </h3>
+                <small
+                  class="heading-tertiary__small heading-tertiary__small--size"
+                >
+                  Lorem ipsum dolor sit amet consectetur
+                </small>
+              </div>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas animi impedit maxime debitis hic magni earum, ratione
+                accusantium a quisquam! Lorem ipsum dolor sit amet consectetur.
+              </p>
+            </div>
+            <!-- right side image -->
+            <div class="menu-box__content-right">
+              <figure class="menu-box__figure">
+                <img
+                  srcset="
+                    ./images/dish-small--3.jpg     300w,
+                    ./images/dish-original--3.jpg 1000w
+                  "
+                  sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                  alt="Healthy Food"
+                  title="Tomato Soup"
+                  src="./images/dish-original--3.jpg"
+                  class="menu-box__image"
+                />
+
+                <figcaption class="menu-box__caption">
+                  <h4 class="menu-box__heading">Ingredients:</h4>
+                  <ul class="menu-box__sub">
+                    <li>Ingre 1</li>
+                    <li>Ingre 2</li>
+                    <li>Ingre 3</li>
+                    <li>Ingre 4</li>
+                    <li>Ingre 5</li>
+                    <li>Ingre 6</li>
+                    <li>Ingre 7</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="animation-scroll menu-box__content menu-box__content--4">
+            <!-- left side text -->
+            <div class="menu-box__content-left">
+              <div class="blockTex-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary__main heading-tertiary__main--size">
+                  Fish In Lemon
+                </h3>
+                <small
+                  class="heading-tertiary__small heading-tertiary__small--size"
+                >
+                  Lorem ipsum dolor sit amet.
+                </small>
+              </div>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas animi impedit maxime debitis hic magni earum, ratione
+                accusantium a quisquam! Lorem ipsum dolor sit amet
+                consecteturaccusantium a quisquam.
+              </p>
+            </div>
+            <!-- right side image -->
+            <div class="menu-box__content-right">
+              <figure class="menu-box__figure">
+                <img
+                  srcset="
+                    ./images/dish-small--4.jpg     300w,
+                    ./images/dish-original--4.jpg 1000w
+                  "
+                  sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                  alt="Healthy Food"
+                  title="Fish In Lemon"
+                  src="./images/dish-original--4.jpg"
+                  class="menu-box__image"
+                />
+
+                <figcaption class="menu-box__caption">
+                  <h4 class="menu-box__heading">Ingredients:</h4>
+                  <ul class="menu-box__sub">
+                    <li>Ingre 1</li>
+                    <li>Ingre 2</li>
+                    <li>Ingre 3</li>
+                    <li>Ingre 4</li>
+                    <li>Ingre 5</li>
+                    <li>Ingre 6</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="animation-scroll menu-box__content menu-box__content--5">
+            <!-- left side text -->
+            <div class="menu-box__content-left">
+              <div class="blockTex-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary__main heading-tertiary__main--size">
+                  Orange Fillet
+                </h3>
+                <small
+                  class="heading-tertiary__small heading-tertiary__small--size"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </small>
+              </div>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                accusantium a quisquam! Lorem ipsum dolor sit amet Voluptas
+                animi impedit maxime debitis hic magni earum, ratione
+                accusantium a quisquam! Lorem ipsum dolor sit amet consectetur.
+              </p>
+            </div>
+            <!-- right side image -->
+            <div class="menu-box__content-right">
+              <figure class="menu-box__figure">
+                <img
+                  srcset="
+                    ./images/dish-small--5.jpg     300w,
+                    ./images/dish-original--5.jpg 1000w
+                  "
+                  sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                  alt="Healthy Food"
+                  title="Orange Fillet"
+                  src="./images/dish-original--5.jpg"
+                  class="menu-box__image"
+                />
+
+                <figcaption class="menu-box__caption">
+                  <h4 class="menu-box__heading">Ingredients:</h4>
+                  <ul class="menu-box__sub">
+                    <li>Ingre 1</li>
+                    <li>Ingre 2</li>
+                    <li>Ingre 3</li>
+                    <li>Ingre 4</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="menu-box__tab-container u-margin-top-small-2">
+            <!-- 01 -->
+            <button
+              class="menu-box__tab menu-box__tab--1 menu-box__tab-active"
+              data-tab="1"
+            >
+              <img
+                srcset="
+                  ./images/dish-small--1.jpg     300w,
+                  ./images/dish-original--1.jpg 1000w
+                "
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                alt="Healthy Food"
+                title="Vegetable Salad"
+                src="./images/dish-original--1.jpg"
+                class="menu-box__image-tab"
+              />
+
+              <p class="menu-box__text">Vegetable Salad</p>
+            </button>
+
+            <!-- 02 -->
+            <button class="menu-box__tab menu-box__tab--2" data-tab="2">
+              <img
+                srcset="
+                  ./images/dish-small--2.jpg     300w,
+                  ./images/dish-original--2.jpg 1000w
+                "
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                alt="Healthy Food"
+                title="Aurora Food"
+                src="./images/dish-original--2.jpg"
+                class="menu-box__image-tab"
+              />
+
+              <p class="menu-box__text">Aurora Food</p>
+            </button>
+
+            <!-- 03 -->
+            <button class="menu-box__tab menu-box__tab--3" data-tab="3">
+              <img
+                srcset="
+                  ./images/dish-small--3.jpg     300w,
+                  ./images/dish-original--3.jpg 1000w
+                "
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                alt="Healthy Food"
+                title="Tomato Soup"
+                src="./images/dish-original--3.jpg"
+                class="menu-box__image-tab"
+              />
+
+              <p class="menu-box__text">Tomato Soup</p>
+            </button>
+
+            <!-- 04 -->
+            <button class="menu-box__tab menu-box__tab--4" data-tab="4">
+              <img
+                srcset="
+                  ./images/dish-small--4.jpg     300w,
+                  ./images/dish-original--4.jpg 1000w
+                "
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                alt="Healthy Food"
+                title="${food}"
+                src="./images/dish-original--4.jpg"
+                class="menu-box__image-tab"
+              />
+
+              <p class="menu-box__text">Fish In Lemon</p>
+            </button>
+
+            <!-- 05 -->
+            <button class="menu-box__tab menu-box__tab--5" data-tab="5">
+              <img
+                srcset="
+                  ./images/dish-small--5.jpg     300w,
+                  ./images/dish-original--5.jpg 1000w
+                "
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw,300px "
+                alt="Healthy Food"
+                title="Orange Fillet"
+                src="./images/dish-original--5.jpg"
+                class="menu-box__image-tab"
+              />
+
+              <p class="menu-box__text">Orange Fillet</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- btn -->
+        <div class="u-center-text u-margin-top-big">
+          <a href="#" class="btn btn--animated">
+            <span class="btn__span">Full Menu</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- B O O K   A   T A B L E -->
+      <section class="section-book section moveup" id="section--4">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium form__center">
+                <span class="heading-secondary__sub">Book A Table</span>
+                <h2 class="heading-secondary">Start Booking Now</h2>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" id="name" required />
+                <label for="name" class="form__label">Full Name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form__input" id="email" required />
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+
+              <div class="form__group">
+                <input type="number" class="form__input" id="number" required />
+                <label for="number" class="form__label">Phone</label>
+              </div>
+
+              <!-- Data 
+              <div class="form__group form__group--data">
+                <div class="form__data-group">
+                  <label for="date" class="form__label-data">Date:</label>
+                  <input type="date" class="form__input form__input--data" id="date" required />
+                </div>
+
+              
+                <div class="form__data-group">
+                  <label for="time" class="form__label-data">Time:</label>
+                  <input list="times" id="time" class="form__input form__input--data" required>
+                    <datalist id="times">
+                      <option value="6:00am">
+                      <option value="9:00am">
+                      <option value="12:00pm">
+                      <option value="1:00pm">
+                      <option value="6:00pm">
+                      <option value="...">
+                    </datalist>
+                  </input>
+                </div>
+                
+         
+                <div class="form__data-group">
+                  <label for="guest" class="form__label-data">Table:</label>
+                  <input list="names" id="guest" class="form__input form__input--data" required>
+                    <datalist id="names">
+                      <option value="1 Person">
+                      <option value="2 People">
+                      <option value="3 People">
+                      <option value="4 People">
+                      <option value="5 People">
+                      <option value="More Than 6...">
+                    </datalist>
+                  </input>
+                </div>
+              </div>
+           -->
+
+              <div class="form__center u-margin-top-medium">
+                <button type="button" class="btn-2">Book Now &rarr;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- T E S T I M O N I A L S -->
+      <section class="section-testimonial section moveup" id="section--5">
+        <div class="u-center-text u-margin-bottom-big">
+          <span class="heading-secondary__sub">Testimonials</span>
+          <h2 class="heading-secondary">What Our Customer Say's</h2>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider slider--none">
+          <!-- 01 -->
+          <div class="animation-scroll">
+            <div class="slider__slide slider__slide--1 slider__slide--none">
+              <div class="testimonial">
+                <figure class="testimonial__figure">
+                  <img
+                    src="./images/authorPhoto--1.jpg"
+                    alt="author photo"
+                    class="testimonial__photo"
+                  />
+                </figure>
+
+                <div class="testimonial__content">
+                  <h5 class="testimonial__name">Toby E.</h5>
+                  <p class="testimonial__location">Nicaragua</p>
+                  <p class="testimonial__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et
+                    asperiores laboriosam
+                  </p>
+                  <p class="testimonial__star">⭐⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="animation-scroll">
+            <div class="slider__slide slider__slide--2 slider__slide--none">
+              <div class="testimonial">
+                <figure class="testimonial__figure">
+                  <img
+                    src="./images/authorPhoto--2.jpg"
+                    alt="author photo"
+                    class="testimonial__photo"
+                  />
+                </figure>
+
+                <div class="testimonial__content">
+                  <h5 class="testimonial__name">Miyah Miles.</h5>
+                  <p class="testimonial__location">Colombia</p>
+                  <p class="testimonial__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et
+                    asperiores laboriosam sunt.
+                  </p>
+                  <p class="testimonial__star">⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="animation-scroll">
+            <div class="slider__slide slider__slide--3 slider__slide--none">
+              <div class="testimonial">
+                <figure class="testimonial__figure">
+                  <img
+                    src="./images/authorPhoto--3.jpg"
+                    alt="author photo"
+                    class="testimonial__photo"
+                  />
+                </figure>
+
+                <div class="testimonial__content">
+                  <h5 class="testimonial__name">Sebastián Gomez.</h5>
+                  <p class="testimonial__location">Mexico</p>
+                  <p class="testimonial__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et
+                    asperiores laboriosam sunt, praesentium suscipit blanditiis.
+                  </p>
+                  <p class="testimonial__star">⭐⭐⭐⭐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow btn-->
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="slider__dots dots"></div>
+        </div>
+
+        <!-- btn -->
+        <div class="u-center-text u-margin-top-medium">
+          <a href="#" class="btn btn--animated">
+            <span class="btn__span">Read More!</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="logo u-center-text u-margin-bottom-medium">
+        <a href="#section--1" class="footer__logo">
+          🥗
+          <span class="footer__logo-text">Logo</span>
+        </a>
+      </div>
+
+      <div class="footer__container">
+        <div class="footer__social footer__content">
+          <h4 class="footer__heading">Social Media</h4>
+
+          <div class="footer__box-social">
+            <svg class="icon icon-facebook2 footer__icon">
+              <use xlink:href="images/sprite.svg#icon-facebook2"></use>
+            </svg>
+
+            <svg class="icon icon-instagram footer__icon">
+              <use xlink:href="images/sprite.svg#icon-instagram"></use>
+            </svg>
+
+            <svg class="icon icon-twitter footer__icon">
+              <use xlink:href="images/sprite.svg#icon-twitter"></use>
+            </svg>
+
+            <svg class="icon icon-whatsapp footer__icon">
+              <use xlink:href="images/sprite.svg#icon-whatsapp"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="footer__nav footer__content">
+          <h4 class="footer__heading u-center-text">Information</h4>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Event</a>
+            </li>
+
+            <!-- 02 -->
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+
+            <!-- 03 -->
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+
+            <!-- 04 -->
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__adress footer__content">
+          <h4 class="footer__heading">Adress</h4>
+          <p class="footer__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quis
+            atque dicta totam consequuntur.
+          </p>
+          <p class="footer__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit, amet
+            consectetur adipisicing elit, Qui quis.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

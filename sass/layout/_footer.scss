@@ -1,0 +1,112 @@
+.footer {
+  padding: 10rem 5rem;
+  color: $color-grey-light-3;
+  background-color: $color-grey-dark-4;
+
+  &__logo {
+    font-size: 5rem;
+  }
+  &__logo-text {
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    );
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    flex: 1 0 30%;
+    align-self: normal;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin: 0 2rem 3rem 0;
+    }
+  }
+
+  &__heading {
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem solid;
+  }
+
+  // S O C I A L --------------------
+
+  &__box-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    fill: $color-primary-dark;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  // N A V --------------------
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    transition: all 0.2s ease-in;
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: $default-font-size;
+      color: inherit;
+      background-color: inherit;
+      margin: 1rem;
+    }
+
+    &:hover,
+    &:active {
+      padding: 0.5rem 1rem;
+      border-radius: 0.7rem;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      color: $color-primary-dark;
+
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  // A D R E S S --------------------
+
+  &__text {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

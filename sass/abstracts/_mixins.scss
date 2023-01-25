@@ -1,0 +1,63 @@
+@mixin centerAbs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin shadow($y, $blur, $alpha) {
+  box-shadow: 0 $y $blur rgba($color-black, $alpha);
+}
+
+// ------------------------------------------------------------------------------
+
+@mixin respond($breakpoint) {
+  // if the width is smaller 1200px
+  @if $breakpoint == tab-landscape {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  // if the width is smaller 1015px
+  @if $breakpoint == breakp-1015 {
+    @media only screen and (max-width: 63.4375em) {
+      @content;
+    }
+  }
+
+  // if the width is smaller 900px
+  @if $breakpoint == tab-portrait {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  // if the width is smaller 750px
+  @if $breakpoint == breakp-750 {
+    @media only screen and (max-width: 46.875em) {
+      @content;
+    }
+  }
+
+  // if the width is smaller than 600px
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  // if the width is smaller than 400px
+  @if $breakpoint == smallPhone {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+
+  // if the width is larger than 1800px, width >= 1800px
+  @if $breakpoint == big-desktop {
+    @media only screen and(min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  // line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  // color: unset;
+}
+// clamp(1.7rem, calc(3vw + 1rem), 7rem)
+.heading-primary {
+  font-family: $font-family-2;
+  font-size: $clamp-medium-big;
+  letter-spacing: 0.2rem;
+  line-height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+
+  backface-visibility: hidden;
+
+  &--sub-left {
+    font-size: $clamp-medium;
+    margin-right: auto;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &--main {
+    color: $color-primary-dark;
+    animation: moveInMain 2s ease-out;
+  }
+
+  &--sub-right {
+    font-size: $clamp-medium;
+    margin-left: auto;
+    animation: moveInRight 1s ease-out;
+  }
+
+  @include respond(breakp-750) {
+    font-size: $clamp-big;
+
+    &--sub-left {
+      font-size: $clamp-small;
+    }
+
+    &--sub-right {
+      font-size: $clamp-small;
+    }
+  }
+}
+
+.heading-secondary {
+  &__sub {
+    font-size: 1.6rem;
+    color: $color-primary-dark;
+  }
+
+  & {
+    font-size: clamp(1.6rem, calc(3vw + 1rem), 3rem);
+    letter-spacing: 0.2rem;
+    font-family: $font-family-2;
+
+    @include respond(breakp-750) {
+      font-size: clamp(1.6rem, calc(4vw + 1rem), 3rem);
+    }
+  }
+
+  &--size {
+    font-size: clamp(1.6rem, calc(4vw + 1rem), 4rem);
+  }
+}
+
+.heading-tertiary {
+  &__main {
+    font-size: 3rem;
+    letter-spacing: $letterSpacing-small;
+    text-transform: uppercase;
+    line-height: 4rem;
+  }
+
+  &__small {
+    font-size: 1.4rem;
+    color: $color-grey-dark-3;
+    //font-style: italic;
+  }
+
+  @include respond(breakp-750) {
+    &__main--size {
+      font-size: 2.5rem;
+    }
+    &__small--size {
+      font-size: 1rem;
+    }
+  }
+}
+
+.paragraph {
+  font-size: $clamp-medium; // $default-font-size
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
+  &--animated {
+    animation: fadeOut 5s ease-out;
+  }
+}
+

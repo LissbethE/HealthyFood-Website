@@ -1,0 +1,109 @@
+.form {
+  &__group {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__input {
+    width: 58%; // 50%
+    display: block;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem solid $color-grey-dark-6;
+
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &:focus {
+      outline: none;
+      border-bottom: 0.2rem solid $color-primary-dark;
+    }
+
+    &:focus:invalid {
+      border-bottom: 0.2rem solid red;
+    }
+  }
+
+  // WAVE ANIMATION -------------------------------
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+  }
+
+  &__label &__span {
+    min-width: 0.5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: $color-grey-dark-6;
+
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__input:focus + &__label &__span,
+  &__input:valid + &__label &__span {
+    color: $color-primary-dark;
+    transform: translateY(-3rem);
+  }
+
+  // Data --------------------
+  &__group--data {
+    width: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__data-group {
+    flex: 1;
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  &__input--data {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  &__label-data {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: $color-primary-dark;
+  }
+
+  @include respond(tab-landscape) {
+    &__input {
+      width: 70%; // 70%
+    }
+
+    &__group--data {
+      width: 70%;
+    }
+  }
+
+  @include respond(tab-portrait) {
+    &__input {
+      width: 100%;
+    }
+
+    &__group--data {
+      width: 100%;
+    }
+
+    &__center {
+      text-align: center;
+    }
+  }
+}

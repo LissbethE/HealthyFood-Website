@@ -1,0 +1,53 @@
+.header {
+  height: 100vh;
+  //background-image: linear-gradient(to right top, #ffefba, #ffffff);
+
+  background-image: url('../images/hero-mediano.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 80%;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: url('../images/hero-original.jpg');
+  }
+
+  &__text-box {
+    width: 52.6%;
+    height: 100%;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-light-1;
+
+    @supports (-webkit-backdrop-filter: blur(1rem)) or
+      (backdrop-filter: blur(1rem)) {
+      background-color: $color-white-rgba;
+      -webkit-backdrop-filter: blur(1rem);
+      backdrop-filter: blur(1rem);
+    }
+  }
+
+  @include respond(breakp-750) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+
+    &__text-box {
+      width: 90%;
+      height: 90%;
+      padding: 5rem; // 3rem 5rem
+      border-radius: 1rem;
+
+      @supports (-webkit-backdrop-filter: blur(0.5rem)) or
+        (backdrop-filter: blur(0.5rem)) {
+        -webkit-backdrop-filter: blur(0.5rem);
+        backdrop-filter: blur(0.5rem);
+      }
+    }
+  }
+}
